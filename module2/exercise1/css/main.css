@@ -1,0 +1,23 @@
+.navbar ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar-horizontal ul {
+    background-color: #333;
+    padding: 9px 15%;
+    border-bottom: 2px green solid;
+}
+ .navbar-horizontal ul li {
+     display: inline-block;
+ }
+
+  .navbar-horizontal ul li.item-right {
+      float: right;
+ }
+
+ .navbar-horizontal ul li a {
+     color: white;
+     padding: 10px;
+     text-decoration: none;
+ }
