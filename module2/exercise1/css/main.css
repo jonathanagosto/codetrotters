@@ -72,6 +72,10 @@ a.btn {
     border-bottom: 2px seagreen solid;
 }
 
+img.img-profile {
+    background-color: white;
+}
+
 .banner {
     color: white;
     background-color: darkviolet;
@@ -89,8 +93,12 @@ a.btn {
     background-color: #ddd;
 }
 
+#team {
+    color: white;
+    background-color: darkblue;
+}
+
 .three-blocks > .block {
-    background-color: white;
     height: 100px;
     width: 28%;
     position: relative;
@@ -99,4 +107,8 @@ a.btn {
 
 .three-blocks > .block + .block {
     margin: 0 1%;
+}
+
+#features .three-blocks > .block {
+    background-color: white;
 }
