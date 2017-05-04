@@ -1,23 +1,102 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1 > small {
+    font-size: 65%;
+}
+
+.wrapper {
+    width: 960px;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+a.btn {
+    color: white;
+    background-color: transparent;
+    padding: 8px 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
 .navbar ul {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .navbar-horizontal ul {
-    background-color: #333;
-    padding: 9px 15%;
-    border-bottom: 2px green solid;
+    width: 100%;
+    overflow: hidden;
 }
- .navbar-horizontal ul li {
-     display: inline-block;
- }
 
-  .navbar-horizontal ul li.item-right {
-      float: right;
- }
+.navbar-horizontal ul li {
+    float: left;
+}
 
- .navbar-horizontal ul li a {
-     color: white;
-     padding: 10px;
-     text-decoration: none;
- }
+.navbar-horizontal ul li a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar-horizontal ul li.item-right {
+    float: right;
+}
+
+.navbar-horizontal ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar-top {
+    background-color: #333;
+    border-bottom: 2px seagreen solid;
+}
+
+.banner {
+    color: white;
+    background-color: darkviolet;
+}
+
+.banner .content {
+    padding: 50px 0;
+}
+
+.three-blocks {
+    margin: 0 auto 50px auto;
+}
+
+#features {
+    background-color: #ddd;
+}
+
+.three-blocks > .block {
+    background-color: white;
+    height: 100px;
+    width: 28%;
+    position: relative;
+    display: inline-block;
+}
+
+.three-blocks > .block + .block {
+    margin: 0 1%;
+}
