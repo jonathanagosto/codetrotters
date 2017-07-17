@@ -1,0 +1,30 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, 'sans-serif';
+    font-size: 16px;
+}
+
+#header {
+    background-color: black;
+    padding-top: 0.1em;
+    padding-bottom: 0.5em;
+}
+
+#header h1,
+#header p {
+    color: white;
+    text-align: center;
+}
+
+.content-area {
+    padding-top: 0.4em;
+    padding-bottom: 0.8em;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#my-picture {
+    width: 300px;
+    height: auto;
+}

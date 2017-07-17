@@ -62,6 +62,10 @@ a.btn {
     float: right;
 }
 
+.navbar-horizontal ul li.item-right a {
+    border: 1px solid white;
+}
+
 .navbar-horizontal ul li a {
     color: white;
     text-decoration: none;

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Module 2 Exercise 4 - Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+
+        <!-- Latest compiled and minified jQuery -->
+        <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    
+    <style>
+        #sidebar {
+            background-color: #ccc;
+        }
+        #sidebar .song-item {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        #sidebar .song-item:first-child {
+            margin-top: 15px;
+        }
+        #sidebar .song-item:last-child {
+            margin-bottom: 15px;
+        }
+        #sidebar .song-item img {
+            margin-top: 21%;
+        }
+        /*#sidebar .song-item + .song-item {
+            margin-top: 10px;
+        }*/
+        #sidebar .row .col-md-10 > * + * {
+            margin-top: 10px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <div id="root" class="container">
+            <div class="row">
+                <div id="main-content" class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                            <h1>Something</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                            <div class="row song-item">
+                                <div class="col-md-5">
+                                    <img class="img-responsive" src="http://lorempixel.com/1200/675/">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4>Song</h4>
+                                    <p>Author</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

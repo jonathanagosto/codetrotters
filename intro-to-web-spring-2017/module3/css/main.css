@@ -1,0 +1,49 @@
+html {
+    color: #fff;
+    font-size: 14px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #232323;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#content {
+    width: 75%;
+    height: 100%;
+    float: left;
+    overflow-y: scroll;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+#content .card {
+    max-width: 350px;
+    margin: 10px;
+    background-color: #3a3939;
+    float: left;
+    border: 3px #000 solid;
+}
+
+#content .card img {
+    width: 350px;
+    height: auto;
+}
+
+#navbar {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+#navbar .profile-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
