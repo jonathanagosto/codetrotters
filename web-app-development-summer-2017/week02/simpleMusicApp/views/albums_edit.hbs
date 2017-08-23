@@ -1,0 +1,15 @@
+<h1>{{data.album}}</h1>
+
+<form action="/albums/{{data.id}}/edit" method="POST">
+    <p>
+        <label>Artist:</label>
+        <input type="text" id="artist" name="artist" value="{{data.artist}}" />
+    </p>
+    <p>
+        <label>Album:</label>
+        <input type="text" id="album" name="album" value="{{data.album}}" />
+    </p>
+    <button type="submit">Modificar</button>
+</form>
+
+<a href="/albums">Volver</a>

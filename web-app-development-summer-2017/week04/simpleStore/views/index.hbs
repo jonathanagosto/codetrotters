@@ -1,0 +1,42 @@
+<h1>Simple Store</h1>
+<p>Welcome to Simple Store! Something like a cheap copy of Amazon, but with prices like...</p>
+<div>
+    <form action="/cart" method="POST">
+        <label for="client_new_cart">Client:</label>
+        <select id="client_new_cart" name="client" required>
+            <option value="" disabled selected>-- Select a client --</option>
+            {{#each data.clients}}
+            <option value={{id}}>{{fullName}}</option>
+            {{/each}}
+        </select>
+        <br />
+        <h3>Products:</h3>
+        {{#each data.products}}
+        <label for="product_{{id}}">{{name}}:</label>
+        <span>${{price}}</span>
+        <input
+            type="number"
+            id="product_{{id}}"
+            name="product_{{id}}"
+            min="0"
+            max="10"
+            value="0"
+            required
+        />
+        <br />
+        {{/each}}
+        <button type="submit">Add to Cart</button>
+    </form>
+</div>
+
+<h2>I already have a cart...</h2>
+<form action="/cart/existing" method="POST">
+    <label for="client_existing_cart">Who are you?</label>
+    <select id="client_existing_cart" name="client" required>
+        <option value="" disabled selected>-- Select a client --</option>
+        {{#each data.clients}}
+        <option value={{id}}>{{fullName}}</option>
+        {{/each}}
+    </select>
+    <button type="submit">Check out my cart</button>
+</form>

@@ -1,0 +1,15 @@
+<h1>{{data.album}}</h1>
+
+<ul>
+    <li>Artist: {{data.artist}}</li>
+    <li>Songs:
+        <ul>
+            {{#each data.songs}}
+            <li>Title: {{title}}</li>
+            <li>Duration (in seconds): {{duration}}</li>
+            {{/each}}
+        </ul>
+    </li>
+</ul>
+
+<a href="/albums">Volver</a>

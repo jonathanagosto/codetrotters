@@ -1,0 +1,26 @@
+<h1>Album List</h1>
+<a href="albums/new">Nuevo Album +</a>
+<table border="1" style="width: 80%; ">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{artist}}</td>
+            <td>{{album}}</td>
+            <td>
+                <a href="albums/{{id}}">View</a>
+                <a href="albums/{{id}}/edit">Edit</a>
+                <a href="#">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

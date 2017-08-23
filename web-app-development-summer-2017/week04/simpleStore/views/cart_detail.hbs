@@ -1,0 +1,36 @@
+<h1>
+    {{data.client.fullName}}'s
+    {{#if data.client.order.completed}}
+    Order
+    {{/if}}
+    {{#unless data.client.order.completed}}
+    Cart
+    {{/unless}}
+</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data.products}}
+        <tr>
+            <td>{{name}}</td>
+            <td>${{price}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td align="right"><strong>Subtotal:</strong></td>
+            <td>${{data.cart.subtotal}}</td>
+        </tr>
+    </tfoot>
+</table>
+<form action="/cart/{{data.cart.id}}" method="POST">
+    <button type="submit">Hacer Compra</button>
+</form>
+<a href="/">Volver a la tienda</a>
+

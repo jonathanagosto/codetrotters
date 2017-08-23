@@ -1,0 +1,19 @@
+<h1>Users List</h1>
+<a href="/users/create">Create New User</a>
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+
+</table>
